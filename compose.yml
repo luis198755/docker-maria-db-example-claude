@@ -12,14 +12,14 @@ services:
       - DB_HOST=db
       - DB_USER=user
       - DB_PASSWORD=password
-      - DB_NAME=ecommerce
+      - DB_NAME=centurion_db
 
   db:
     image: mariadb:10.5
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: ecommerce
+      MYSQL_DATABASE: centurion_db
       MYSQL_USER: user
       MYSQL_PASSWORD: password
     volumes:
